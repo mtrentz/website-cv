@@ -34,15 +34,15 @@ const SideBar = () => {
                 {/* socials */}
                 <div className="bg-green-400 h-24 flex-grow-0">
                     <p className="text-md mb-2 ml-1">Find me on</p>
-                    <div className="flex flex-row justify-center gap-2 items-center">
+                    <div className="flex flex-row justify-center gap-3 items-center">
                         <a href="#" title="Link to my GitHub">
-                            < FaGithubSquare className="w-12 h-10"/>
+                            < FaGithubSquare className="w-10 h-10"/>
                         </a>
                         <a href="#" title="Link to my Tableau Public">
-                            < IoLogoTableau className="w-12 h-10"/>
+                            < IoLogoTableau className="w-10 h-10 "/>
                         </a>
                         <a href="#" title="Link to my LinkedIn">
-                            < IoLogoLinkedin className="w-12 h-10"/>
+                            < IoLogoLinkedin className="w-10 h-10"/>
                         </a>
                     </div>
                 </div>

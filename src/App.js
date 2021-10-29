@@ -1,12 +1,12 @@
 import SideBar from "./components/SideBar";
-import Content from "./components/Content";
+import ContentAboutMe from "./components/ContentAboutMe";
 
 function App() {
   return (
-    <div className="App h-screen font-sans">
+    <div className="App h-screen font-sans text-gray-800">
       <div className="flex flex-row  h-screen">
         <SideBar />
-        <Content />
+        <ContentAboutMe />
       </div>
     </div>
   );
