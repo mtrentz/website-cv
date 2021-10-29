@@ -21,7 +21,7 @@ const ContentAboutMe = () => {
     ]
 
     return (
-        <div className="bg-gray-100 flex flex-col h-full w-full">
+        <div className="bg-terciary flex flex-col h-full w-full">
             {/* Content Title */}
             <ContentTitle title="About Me" />
 
@@ -29,7 +29,7 @@ const ContentAboutMe = () => {
             <ContentNavBar navbarLinks={navbarLinks}/>
 
             {/* Content Body */}
-            <div className="bg-pink-300 flex flex-grow items-center justify-center py-5 px-8">
+            <div className="flex flex-grow items-center justify-center py-5 px-8">
                 <ContentBodyEducation/>
             </div>
         </div>

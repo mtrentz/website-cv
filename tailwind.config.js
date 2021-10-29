@@ -6,6 +6,12 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Roboto', 'Helvetica', 'Arial', 'sans-serif']
+      },
+      colors: {
+        main: '#67839C',
+        secondary: '#7790A7',
+        accent: '#AABAC8',
+        terciary: '#EDF1F3',
       }
     },
   },
