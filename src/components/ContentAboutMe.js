@@ -2,7 +2,9 @@ import React from 'react'
 import ContentTitle from './ContentTitle'
 import ContentNavBar from './ContentNavBar'
 import ContentBodyEducation from './bodies/ContentBodyEducation'
+import ContentBodyTech from './bodies/ContentBodyTech'
 import { useState } from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 const ContentAboutMe = () => {
 
@@ -10,13 +12,13 @@ const ContentAboutMe = () => {
         {
             id: 1,
             name: 'Education',
-            link: '#education',
+            link: '/education',
             selected: true
         },
         {
             id: 2,
             name: 'Tech Skills',
-            link: '#tech-skills',
+            link: '/tech-skills',
             selected: false
         },
         {
@@ -37,16 +39,26 @@ const ContentAboutMe = () => {
 
     return (
         <div className="bg-terciary flex flex-col h-full w-full">
-            {/* Content Title */}
-            <ContentTitle title="About Me" />
+            <Router>
+                {/* Content Title */}
+                <ContentTitle title="About Me" />
 
-            {/* ContentNav */}
-            <ContentNavBar navbarLinks={navbarLinks} handleClick={handleClick}/>
+                {/* ContentNav */}
+                <ContentNavBar navbarLinks={navbarLinks} handleClick={handleClick}/>
 
-            {/* Content Body */}
-            <div className="flex flex-grow items-center justify-center">
-                <ContentBodyEducation/>
-            </div>
+                {/* Content Body */}
+                <div className="flex flex-grow items-center justify-center">
+                    <Switch>
+                        <Route path="/education" exact>
+                            <ContentBodyEducation/>
+                        </Route>
+                        {/* Create route for ContentBodyTech */}
+                        <Route path="/tech-skills" exact>
+                            <ContentBodyTech/>
+                        </Route>
+                    </Switch>
+                </div>
+            </Router>
         </div>
     )
 }

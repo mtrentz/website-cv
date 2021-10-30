@@ -23,8 +23,8 @@ const SideBar = () => {
                     {/* menu */}
                     <div className="flex-grow mr-2">
                         < MenuMainSection sectionTitle="About Me" sectionIcon={<AiOutlineUser />} sectionHref="#"/>
-                            < MenuSubSection sectionTitle="Education" sectionIcon={<HiOutlineAcademicCap />} sectionHref="#" />
-                            < MenuSubSection sectionTitle="Tech Skills" sectionIcon={<HiOutlineTerminal />} sectionHref="#" />
+                            < MenuSubSection sectionTitle="Education" sectionIcon={<HiOutlineAcademicCap />} sectionHref="/education" />
+                            < MenuSubSection sectionTitle="Tech Skills" sectionIcon={<HiOutlineTerminal />} sectionHref="/tech-skills" />
                             < MenuSubSection sectionTitle="Miscellaneous" sectionIcon={<HiOutlinePuzzle />} sectionHref="#" />
                         < MenuMainSection sectionTitle="Projects" sectionIcon={ <HiOutlineSparkles /> } sectionHref="#"/>
                             < MenuSubSection sectionTitle="Coding" sectionIcon={<HiOutlineCode />} sectionHref="#" />
