@@ -4,10 +4,10 @@ const ContentNavBar = ( { navbarLinks } ) => {
 
     return (
 
-        <div className="h-16 pl-16 pt-3 flex flex-row gap-3">
+        <div className="h-8 pl-16 flex flex-row gap-3 items-center">
             {navbarLinks.map( (links) => (
                 <a href={links.link}>
-                    <div className="bg-accent h-1.5 w-16 rounded-full"></div>
+                    <div className="bg-accent h-2 w-16 rounded-full"></div>
                 </a>
             ))}
         </div>
