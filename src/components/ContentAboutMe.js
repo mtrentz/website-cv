@@ -13,7 +13,7 @@ const ContentAboutMe = () => {
             id: 1,
             name: 'Education',
             link: '/education',
-            selected: true
+            selected: false
         },
         {
             id: 2,
@@ -29,8 +29,12 @@ const ContentAboutMe = () => {
         }
     ])
 
-    const handleClick = (id) => {
-        // If clicked, set that one to true, all other ones to false
+    const getLinkId = (linkName) => {
+        return navbarLinks.find(link => link.name === linkName).id
+    }
+
+    const handleMount = (id) => {
+        // When certain page is mounted, change color of content navbar
         const updatedLinks = navbarLinks.map(link => 
             link.id === id ? {...link, selected:true} : {...link, selected:false}
             )
@@ -44,16 +48,16 @@ const ContentAboutMe = () => {
                 <ContentTitle title="About Me" />
 
                 {/* ContentNav */}
-                <ContentNavBar navbarLinks={navbarLinks} handleClick={handleClick}/>
+                <ContentNavBar navbarLinks={navbarLinks}/>
 
                 {/* Content Body */}
                 <div className="flex flex-grow items-center justify-center">
                     <Switch>
                         <Route path="/education" exact>
-                            <ContentBodyEducation/>
+                            <ContentBodyEducation linkId={getLinkId("Education")} handleMount={handleMount}/>
                         </Route>
                         <Route path="/tech-skills" exact>
-                            <ContentBodyTech/>
+                            <ContentBodyTech linkId={getLinkId("Tech Skills")} handleMount={handleMount}/>
                         </Route>
                     </Switch>
                 </div>

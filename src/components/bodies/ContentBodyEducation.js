@@ -1,11 +1,17 @@
 import React from 'react'
+import { useEffect } from 'react'
 import aang from '../../images/aang.png'
 import ufrgs from '../../images/ufrgs.png'
 import maxiquim from '../../images/maxiquim.png'
 
 
 // This card is kinda unique so I wont try to make into a customizable component
-const ContentBodyEducation = () => {
+const ContentBodyEducation = ( {linkId, handleMount } ) => {
+
+    useEffect(() => {
+        handleMount(linkId)
+    })
+
     return (
         <div className="bg-white w-[90%] h-[90%] flex flex-col justify-center rounded-md overflow-hidden shadow-lg">
             

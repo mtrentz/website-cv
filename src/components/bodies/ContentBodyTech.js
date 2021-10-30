@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import CardDefault from './CardDefault'
 import CardDouble from './CardDouble'
 import python from '../../images/python.png'
@@ -9,7 +10,12 @@ import tableau from '../../images/tableau.png'
 import mysql from '../../images/mysql.png'
 import mysql2 from '../../images/mysql2.png'
 
-const ContentBodyTech = () => {
+const ContentBodyTech = ( {linkId, handleMount } ) => {
+
+    useEffect(() => {
+        handleMount(linkId)
+    })
+    
     return (
         <div className="w-[70%] h-[90%] flex items-center justify-center">
             <div className="grid grid-cols-3 gap-x-1 gap-y-2">
