@@ -12,10 +12,10 @@ const ContentBodyEducation = () => {
             {/* Top Part*/}
             <div className=" flex-1 flex flex-row">
                 {/* Left Part */}
-                <div className=" w-1/5 px-4 min-w-min flex items-center justify-center">
+                <div className=" w-1/4 px-4 min-w-min flex items-center justify-center">
                     {/* Container for rounded image (cropped) */}
-                    <div className="w-32 h-32 overflow-hidden rounded-full">
-                        <img src={aang} alt="Profile Pic" className="h-36 pb-3"/>
+                    <div className="h-32 w-32 md:h-38 md:w-38 lg:w-44 lg:h-44 overflow-hidden rounded-full border">
+                        <img src={aang} alt="Profile Pic" className="object-cover scale-150 pl-2"/>
                     </div>
                 </div>
 
