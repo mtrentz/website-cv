@@ -44,7 +44,7 @@ const ContentAboutMe = () => {
             <ContentNavBar navbarLinks={navbarLinks} handleClick={handleClick}/>
 
             {/* Content Body */}
-            <div className="flex flex-grow items-center justify-center py-5 px-8">
+            <div className="flex flex-grow items-center justify-center">
                 <ContentBodyEducation/>
             </div>
         </div>

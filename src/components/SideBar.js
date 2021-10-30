@@ -11,17 +11,17 @@ const SideBar = () => {
     // TODO: Ver como criar shadow pra direita
     return (
         <div>
-            <nav className="w-72 bg-white shadow-2xl">
+            <nav className="xl:w-64 2xl:w-72 bg-white shadow-2xl">
                 <div className="flex flex-col h-screen">
                     {/* logo */}
-                    <div className="h-36 flex-grow-0 flex items-center">
+                    <div className="h-[25%] flex-grow-0 flex items-center">
                         <a href="#" className="block m-auto">
-                            <svg className="w-24 h-24 rounded-lg opacity-90" viewBox="0 0 143 143" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#67839C" fill-opacity=".9" d="M0 0h143v143H0z"/><path d="M38.908 38.55H22.522l16.386 81.791v-81.79ZM71.679 38.55v65.542L104.45 38.55H71.952v-.273h-.273V22.165h49.156V38.55l-32.77 65.542h32.77v16.385H55.43V38.55h16.249Z" fill="#fff" stroke="#fff" stroke-width="2"/></svg>
+                            <svg className="w-24 h-24 md:w-26 md:h-26 lg:w-30 lg:h-30 xl:h-32 xl:w-32 2xl:h-40 2xl:w-40  rounded-lg md:rounded-xl lg: opacity-90" viewBox="0 0 143 143" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#67839C" fill-opacity=".9" d="M0 0h143v143H0z"/><path d="M38.908 38.55H22.522l16.386 81.791v-81.79ZM71.679 38.55v65.542L104.45 38.55H71.952v-.273h-.273V22.165h49.156V38.55l-32.77 65.542h32.77v16.385H55.43V38.55h16.249Z" fill="#fff" stroke="#fff" stroke-width="2"/></svg>
                         </a>
                     </div>
 
                     {/* menu */}
-                    <div className="flex-grow">
+                    <div className="flex-grow mr-2">
                         < MenuMainSection sectionTitle="About Me" sectionIcon={<AiOutlineUser />} sectionHref="#"/>
                             < MenuSubSection sectionTitle="Education" sectionIcon={<HiOutlineAcademicCap />} sectionHref="#" />
                             < MenuSubSection sectionTitle="Tech Skills" sectionIcon={<HiOutlineTerminal />} sectionHref="#" />

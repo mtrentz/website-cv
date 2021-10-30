@@ -7,20 +7,20 @@ import maxiquim from '../../images/maxiquim.png'
 // This card is kinda unique so I wont try to make into a customizable component
 const ContentBodyEducation = () => {
     return (
-        <div className="bg-white w-full h-full flex flex-col justify-center rounded-md overflow-hidden shadow-lg my-4">
+        <div className="bg-white w-[90%] h-[90%] flex flex-col justify-center rounded-md overflow-hidden shadow-lg">
             
             {/* Top Part*/}
             <div className=" flex-1 flex flex-row">
                 {/* Left Part */}
                 <div className=" w-1/4 px-4 min-w-min flex items-center justify-center pl-8">
                     {/* Container for rounded image (cropped) */}
-                    <div className="h-32 w-32 md:h-38 md:w-38 lg:w-44 lg:h-44 overflow-hidden rounded-full border">
+                    <div className="h-32 w-32 md:h-38 md:w-38 lg:w-44 lg:h-44 2xl:w-56 2xl:h-56 overflow-hidden rounded-full border">
                         <img src={aang} alt="Profile Pic" className="object-cover scale-150 pl-2"/>
                     </div>
                 </div>
 
                 {/* Right Part */}
-                <div className="flex flex-col flex-1 justify-center px-4 md:mx-10">
+                <div className="flex flex-col flex-1 justify-center px-4">
                     <p className="font-medium pl-6 pb-2 text-left">My Full Name</p>
                     <p className=" flex-0 text-left">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, vero natus sunt doloribus facilis impedit accusantium nisi libero iste reprehenderit cum eveniet ipsa tempora laborum repellat totam quisquam in tempore.
@@ -38,7 +38,7 @@ const ContentBodyEducation = () => {
                 {/* Left Part */}
                 <div className=" flex-1 flex items-center justify-center md:gap-4 lg:gap-10">
                     {/* Logo Part */}
-                    <div className="w-24 h-24 md:h-32 md:w-32 lg:h-36 lg:w-36 overflow-hidden rounded-full bg-white border">
+                    <div className="w-24 h-24 md:h-32 md:w-32 lg:h-36 lg:w-36 2xl:h-48 2xl:w-48 overflow-hidden rounded-full border flex justify-center">
                         <img src={ufrgs} alt="Profile Pic" className=""/>
                     </div>
 
@@ -58,7 +58,7 @@ const ContentBodyEducation = () => {
                 {/* Right Part */}
                 <div className="bg-white flex-1 flex items-center justify-center md:gap-4 lg:gap-10">
                     {/* Logo Part */}
-                    <div className="w-32 h-24 md:w-36 md:h-28 lg:w-40 lg:h-32 overflow-hidden rounded-2xl  border">
+                    <div className="w-32 h-24 md:w-36 md:h-28 lg:w-40 lg:h-32 2xl:w-52 2xl:h-40 overflow-hidden rounded-2xl border flex justify-center">
                         <img src={maxiquim} alt="Profile Pic" className=""/>
                     </div>
 
