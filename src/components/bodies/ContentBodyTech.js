@@ -1,9 +1,45 @@
 import React from 'react'
+import CardDefault from './CardDefault'
+import CardDouble from './CardDouble'
+import python from '../../images/python.png'
+import golang from '../../images/golang.png'
+import javascript from '../../images/javascript.png'
+import tableauDash from '../../images/tableau_dashboard.png'
+import tableau from '../../images/tableau.png'
+import mysql from '../../images/mysql.png'
+import mysql2 from '../../images/mysql2.png'
 
 const ContentBodyTech = () => {
     return (
-        <div className="bg-white w-[90%] h-[90%] flex flex-col justify-center rounded-md overflow-hidden shadow-lg">
-            <span>Hey</span>
+        <div className="w-[70%] h-[90%] flex items-center justify-center">
+            <div className="grid grid-cols-3 gap-x-1 gap-y-2">
+                <CardDefault 
+                    cardImage={python}
+                    cardTitle="Python"
+                    cardDescription="Something about the programming language Python"
+                />
+                <CardDefault 
+                    cardImage={golang}
+                    cardTitle="Golang"
+                    cardDescription="I've used Go extensively for that and this and something like that "
+                />
+                <CardDefault 
+                    cardImage={javascript}
+                    cardTitle="JavaScript"
+                    cardDescription="Used JavaScript for creating React Apps and such"
+                />
+                <CardDouble 
+                    cardImage={tableau}
+                    cardTitle="Tableau"
+                    cardDescription="Made some data vizzes!"
+                    cardImageBig={tableauDash}
+                />
+                <CardDefault 
+                    cardImage={mysql}
+                    cardTitle="MySQL"
+                    cardDescription="I've been working with SQL for such amount of time"
+                />
+            </div>
         </div>
     )
 }

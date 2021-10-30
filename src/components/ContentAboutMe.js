@@ -39,6 +39,7 @@ const ContentAboutMe = () => {
 
     return (
         <div className="bg-terciary flex flex-col h-full w-full">
+            {/* TODO: Ver some LINK ao invés de ROUTE */}
             <Router>
                 {/* Content Title */}
                 <ContentTitle title="About Me" />

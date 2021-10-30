@@ -21,6 +21,7 @@ const SideBar = () => {
                     </div>
 
                     {/* menu */}
+                    {/* TODO isso aqui deveria sharear uma lista junto com o ContentNavBar */}
                     <div className="flex-grow mr-2">
                         < MenuMainSection sectionTitle="About Me" sectionIcon={<AiOutlineUser />} sectionHref="#"/>
                             < MenuSubSection sectionTitle="Education" sectionIcon={<HiOutlineAcademicCap />} sectionHref="/education" />
