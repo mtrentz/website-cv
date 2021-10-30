@@ -39,7 +39,6 @@ const ContentAboutMe = () => {
 
     return (
         <div className="bg-terciary flex flex-col h-full w-full">
-            {/* TODO: Ver some LINK ao invés de ROUTE */}
             <Router>
                 {/* Content Title */}
                 <ContentTitle title="About Me" />
@@ -53,7 +52,6 @@ const ContentAboutMe = () => {
                         <Route path="/education" exact>
                             <ContentBodyEducation/>
                         </Route>
-                        {/* Create route for ContentBodyTech */}
                         <Route path="/tech-skills" exact>
                             <ContentBodyTech/>
                         </Route>
