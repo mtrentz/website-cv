@@ -5,27 +5,29 @@ import ContentBodyEducation from './bodies/ContentBodyEducation'
 import ContentBodyTech from './bodies/ContentBodyTech'
 import ContentBodyComplementary from './bodies/ContentBodyComplementary'
 import { useState } from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, useRouteMatch, Redirect} from 'react-router-dom'
 
 const ContentAboutMe = () => {
+
+    let { path, url } = useRouteMatch();
 
     const [navbarLinks, setNavbarLinks] = useState([
         {
             id: 1,
             name: 'Education',
-            link: '/education',
+            link: `${path}/education`,
             selected: false
         },
         {
             id: 2,
             name: 'Tech Skills',
-            link: '/tech-skills',
+            link: `${path}/tech`,
             selected: false
         },
         {
             id: 3,
             name: 'Complementary',
-            link: '/complementary',
+            link: `${path}/Complementary`,
             selected: false
         }
     ])
@@ -44,7 +46,6 @@ const ContentAboutMe = () => {
 
     return (
         <div className="bg-terciary flex flex-col h-full w-full">
-            <Router>
                 {/* Content Title */}
                 <ContentTitle title="About Me" />
 
@@ -53,19 +54,18 @@ const ContentAboutMe = () => {
 
                 {/* Content Body */}
                 <div className="flex flex-grow items-center justify-center">
-                    <Switch>
-                        <Route path="/education" exact>
-                            <ContentBodyEducation linkId={getLinkId("Education")} handleMount={handleMount}/>
-                        </Route>
-                        <Route path="/tech-skills" exact>
-                            <ContentBodyTech linkId={getLinkId("Tech Skills")} handleMount={handleMount}/>
-                        </Route>
-                        <Route path="/complementary" exact>
-                            <ContentBodyComplementary linkId={getLinkId("Complementary")} handleMount={handleMount}/>
-                        </Route>
-                    </Switch>
+                <Switch>
+                    <Route exact path={`${path}/education`} >
+                        <ContentBodyEducation linkId={getLinkId("Education")} handleMount={handleMount}/>
+                    </Route>
+                    <Route exact path={`${path}/tech`} >
+                        <ContentBodyTech linkId={getLinkId("Tech Skills")} handleMount={handleMount}/>
+                    </Route>
+                    <Route exact path={`${path}/complementary`} >
+                        <ContentBodyComplementary linkId={getLinkId("Complementary")} handleMount={handleMount}/>
+                    </Route>
+                </Switch>
                 </div>
-            </Router>
         </div>
     )
 }
