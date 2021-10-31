@@ -3,6 +3,7 @@ import ContentTitle from './ContentTitle'
 import ContentNavBar from './ContentNavBar'
 import ContentBodyEducation from './bodies/ContentBodyEducation'
 import ContentBodyTech from './bodies/ContentBodyTech'
+import ContentBodyComplementary from './bodies/ContentBodyComplementary'
 import { useState } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
@@ -23,8 +24,8 @@ const ContentAboutMe = () => {
         },
         {
             id: 3,
-            name: 'Miscellaneous',
-            link: '#miscellaneous',
+            name: 'Complementary',
+            link: '/complementary',
             selected: false
         }
     ])
@@ -58,6 +59,9 @@ const ContentAboutMe = () => {
                         </Route>
                         <Route path="/tech-skills" exact>
                             <ContentBodyTech linkId={getLinkId("Tech Skills")} handleMount={handleMount}/>
+                        </Route>
+                        <Route path="/complementary" exact>
+                            <ContentBodyComplementary linkId={getLinkId("Complementary")} handleMount={handleMount}/>
                         </Route>
                     </Switch>
                 </div>

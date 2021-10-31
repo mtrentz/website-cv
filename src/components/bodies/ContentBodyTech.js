@@ -8,7 +8,6 @@ import javascript from '../../images/javascript.png'
 import tableauDash from '../../images/tableau_dashboard.png'
 import tableau from '../../images/tableau.png'
 import mysql from '../../images/mysql.png'
-import mysql2 from '../../images/mysql2.png'
 
 const ContentBodyTech = ( {linkId, handleMount } ) => {
 

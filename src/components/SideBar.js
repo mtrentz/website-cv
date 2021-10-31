@@ -22,11 +22,12 @@ const SideBar = () => {
 
                     {/* menu */}
                     {/* TODO isso aqui deveria sharear uma lista junto com o ContentNavBar */}
+                    {/* Eu posso colocar router aqui e trocar os menus por LINKS? */}
                     <div className="flex-grow mr-2">
-                        < MenuMainSection sectionTitle="About Me" sectionIcon={<AiOutlineUser />} sectionHref="#"/>
+                        < MenuMainSection sectionTitle="About Me" sectionIcon={<AiOutlineUser />} sectionHref="/education"/>
                             < MenuSubSection sectionTitle="Education" sectionIcon={<HiOutlineAcademicCap />} sectionHref="/education" />
                             < MenuSubSection sectionTitle="Tech Skills" sectionIcon={<HiOutlineTerminal />} sectionHref="/tech-skills" />
-                            < MenuSubSection sectionTitle="Miscellaneous" sectionIcon={<HiOutlinePuzzle />} sectionHref="#" />
+                            < MenuSubSection sectionTitle="Complementary" sectionIcon={<HiOutlinePuzzle />} sectionHref="/complementary" />
                         < MenuMainSection sectionTitle="Projects" sectionIcon={ <HiOutlineSparkles /> } sectionHref="#"/>
                             < MenuSubSection sectionTitle="Coding" sectionIcon={<HiOutlineCode />} sectionHref="#" />
                             < MenuSubSection sectionTitle="Data Vizzes" sectionIcon={<HiOutlineChartBar />} sectionHref="#" />
