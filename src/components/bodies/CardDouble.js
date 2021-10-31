@@ -22,7 +22,7 @@ const CardDouble = ( { cardImage, cardTitle, cardDescription, cardImageBig }) =>
             <div className="w-[60%] flex flex-row -space-x-1">
                 {/* This is to simmulate a rounded corner of the logo and description part with the image on the bottom of it */}
                 <div className="bg-white w-3 rounded-r-lg z-20"></div>
-                <div className="flex z-10"><img src={cardImageBig} alt={cardTitle} className="object-cover opacity-80"/></div>
+                <div className="flex z-10 w-full"><img src={cardImageBig} alt={cardTitle} className="object-cover opacity-80"/></div>
             </div>
 
         </div>
