@@ -27,20 +27,13 @@ const ContentBodyComplementary = ( {linkId, handleMount } ) => {
                 <CardDouble 
                     cardImage={sdu}
                     cardTitle="Syddansk Universitet"
-                    cardDescription="Two semester in Denmark studying Chemical Engineering"
+                    cardDescription="Two semesters in Denmark studying Chemical Engineering"
                     cardImageBig={sdu_pic}
                 />
                 <CardDefault 
                     cardImage={dtu}
                     cardTitle="TU Dortmund"
                     cardDescription="Three months summer course studying Chemical Engineering"
-                />
-                {/* TODO: Colocar outras cards aqui. Ou guitarra e tech, ou Cortex e achar uma outra... */}
-                <CardDouble 
-                    cardImage={tableau}
-                    cardTitle="Tableau"
-                    cardDescription="Made some data vizzes!"
-                    cardImageBig={tableauDash}
                 />
             </div>
         </div>

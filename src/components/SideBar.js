@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import MenuMainSection from "./MenuMainSection";
 import MenuSubSection from "./MenuSubSection";
 import { AiOutlineUser } from "react-icons/ai";

@@ -35,8 +35,8 @@ const ContentBodyEducation = ( {linkId, handleMount } ) => {
             </div>
 
             {/* Separator */}
-            <div className="bg white h-5 flex flex-col justify-center items-center">
-                <div className="bg-gray-300 w-5/6 h-[1px]"></div>
+            <div className="h-5 flex flex-col justify-center items-center">
+                <div className="bg-gray-200 w-5/6 h-[2px]"></div>
             </div>
 
             {/* Bottom Part*/}
@@ -58,7 +58,7 @@ const ContentBodyEducation = ( {linkId, handleMount } ) => {
                 
                 {/* Separator */}
                 <div className=" w-5 flex-none flex flex-col justify-center pl-3">
-                    <div className="bg-gray-300 h-3/4 w-[1px] transform rotate-[5deg]"></div>
+                    <div className="bg-gray-200 h-3/4 w-[2px] transform rotate-[5deg]"></div>
                 </div>
 
                 {/* Right Part */}

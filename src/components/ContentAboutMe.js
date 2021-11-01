@@ -5,7 +5,7 @@ import ContentBodyEducation from './bodies/ContentBodyEducation'
 import ContentBodyTech from './bodies/ContentBodyTech'
 import ContentBodyComplementary from './bodies/ContentBodyComplementary'
 import { useState } from 'react'
-import { BrowserRouter as Router, Switch, Route, useRouteMatch, Redirect} from 'react-router-dom'
+import { Switch, Route, useRouteMatch} from 'react-router-dom'
 
 const ContentAboutMe = () => {
 
