@@ -52,7 +52,7 @@ const ContentProjects = () => {
       <ContentNavBar navbarLinks={navbarLinks} />
 
       {/* Content Body */}
-      <div className="flex flex-grow items-center justify-center">
+      <div className="flex flex-grow items-center justify-center overflow-hidden">
         <Switch>
           <Route exact path={`${path}/coding`}>
             <ContentBodyCoding
