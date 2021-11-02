@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import MenuMainSection from "./MenuMainSection";
 import MenuSubSection from "./MenuSubSection";
 import { AiOutlineUser } from "react-icons/ai";
@@ -21,7 +22,7 @@ const SideBar = () => {
         <div className="flex flex-col h-screen">
           {/* logo */}
           <div className="h-[25%] flex-grow-0 flex items-center">
-            <a href="#" className="block m-auto">
+            <Link to="/" className="block m-auto">
               <svg
                 className="w-24 h-24 md:w-26 md:h-26 lg:w-30 lg:h-30 xl:h-32 xl:w-32 2xl:h-40 2xl:w-40  rounded-lg md:rounded-xl lg: opacity-90"
                 viewBox="0 0 143 143"
@@ -36,7 +37,7 @@ const SideBar = () => {
                   stroke-width="2"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
 
           {/* menu */}
@@ -84,13 +85,25 @@ const SideBar = () => {
           <div className="h-24 flex-grow-0 mb-3">
             <p className="mb-2 ml-4 font-medium">Find me on</p>
             <div className="flex flex-row justify-center gap-3 items-center">
-              <a href="#" title="Link to my GitHub">
+              <a
+                href="https://github.com/mtrentz"
+                target="_blank"
+                title="Link to my GitHub"
+              >
                 <FaGithubSquare className="w-12 h-12 text-gray-700" />
               </a>
-              <a href="#" title="Link to my Tableau Public">
+              <a
+                href="https://public.tableau.com/app/profile/mtrentz"
+                target="_blank"
+                title="Link to my Tableau Public"
+              >
                 <IoLogoTableau className="w-10 h-10 bg-gray-700 text-white rounded-[4px] p-[2px]" />
               </a>
-              <a href="#" title="Link to my LinkedIn">
+              <a
+                href="https://www.linkedin.com/in/mtrentz/"
+                target="_blank"
+                title="Link to my LinkedIn"
+              >
                 <IoLogoLinkedin className="w-12 h-12 text-gray-700" />
               </a>
             </div>

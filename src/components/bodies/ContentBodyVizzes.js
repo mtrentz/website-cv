@@ -15,43 +15,43 @@ const ContentBodyVizzes = ({ linkId, handleMount }) => {
   const vizzesData = [
     {
       id: 1,
-      title: "Viz title",
+      title: "Plastic Recyclers",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, commodi!",
+        "Location and date of opening of all plastic recyclers in Brazil.",
       image: recuperadores,
-      githubLink: "#",
+      link: "https://public.tableau.com/views/RecicladoresdePlsticonoBrasil/EstabelecimentosRecuperadores2?:language=en-US&:display_count=n&:origin=viz_share_link",
     },
     {
       id: 2,
-      title: "Viz title",
+      title: "My Spotify",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, commodi!",
+        "Analysis of my spotify listening habits. Top artists and genres.",
       image: spotify,
-      githubLink: "#",
+      link: "https://public.tableau.com/views/MySpotifyAnalysis/Home?:language=en-US&:display_count=n&:origin=viz_share_link",
     },
     {
       id: 3,
-      title: "Viz title",
+      title: "Polyethylene in S.A.",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, commodi!",
+        "General data of production, consumption and exports of Polyethylene in South America.",
       image: pe,
-      githubLink: "#",
+      link: "https://public.tableau.com/views/PolyethyleneinSouthAmerica/Capacity?:language=en-US&:display_count=n&:origin=viz_share_link",
     },
     {
       id: 4,
-      title: "Viz title",
+      title: "Energy Production",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, commodi!",
+        "General data of petroleum and its derivates produced in Brazil.",
       image: anp,
-      githubLink: "#",
+      link: "https://public.tableau.com/views/DadosBrasilEnergia/ProjeoVendadeGasolinaCporestado?:language=en-US&:display_count=n&:origin=viz_share_link",
     },
     {
       id: 5,
-      title: "Viz title",
+      title: "Plastic Data",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, commodi!",
+        "Brazil's import and export data of the most common plastics.",
       image: balanca,
-      githubLink: "#",
+      link: "https://public.tableau.com/views/BalanaComercialBrasileiraresinas/BalanaComercial?:language=en-US&:display_count=n&:origin=viz_share_link",
     },
   ];
 

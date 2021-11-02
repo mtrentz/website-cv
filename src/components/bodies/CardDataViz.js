@@ -2,7 +2,7 @@ import React from "react";
 
 const CardDataViz = ({ vizzesData }) => {
   return (
-    <div className="w-[70%] py-5 overflow-y-auto h-full">
+    <div className="w-[80%] py-5 overflow-y-auto h-full">
       {vizzesData.map((vizData) => (
         //   Card
         <div className="bg-white w-[90%] h-[25%] rounded-xl flex flex-row overflow-hidden shadow-lg my-5">
@@ -21,7 +21,7 @@ const CardDataViz = ({ vizzesData }) => {
             </div>
           </div>
           {/* Image Part */}
-          <a href={vizData.githubLink} className="w-[60%] flex -space-x-1 z-10">
+          <a href={vizData.link} className="w-[60%] flex -space-x-1 z-10">
             {/* This is to simmulate a rounded corner of the logo and description part with the image on the bottom of it */}
             <div className="bg-white w-1 rounded-r-lg z-20"></div>
             <img
