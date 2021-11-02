@@ -67,17 +67,17 @@ const SideBar = () => {
             <MenuMainSection
               sectionTitle="Projects"
               sectionIcon={<HiOutlineSparkles />}
-              sectionHref="#"
+              sectionHref="/projects/coding"
             />
             <MenuSubSection
               sectionTitle="Coding"
               sectionIcon={<HiOutlineCode />}
-              sectionHref="#"
+              sectionHref="/projects/coding"
             />
             <MenuSubSection
               sectionTitle="Data Vizzes"
               sectionIcon={<HiOutlineChartBar />}
-              sectionHref="#"
+              sectionHref="/projects/vizzes"
             />
             <MenuSubSection
               sectionTitle="Others"

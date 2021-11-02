@@ -1,5 +1,6 @@
 import React from "react";
 import ContentBodyCoding from "./bodies/ContentBodyCoding";
+import ContentBodyVizzes from "./bodies/ContentBodyVizzes";
 import ContentTitle from "./ContentTitle";
 import ContentNavBar from "./ContentNavBar";
 import { useState } from "react";
@@ -18,7 +19,7 @@ const ContentProjects = () => {
     {
       id: 2,
       name: "Data Vizzes",
-      link: `${path}/viz`,
+      link: `${path}/vizzes`,
       selected: false,
     },
     {
@@ -52,11 +53,17 @@ const ContentProjects = () => {
       <ContentNavBar navbarLinks={navbarLinks} />
 
       {/* Content Body */}
-      <div className="flex flex-grow items-center justify-center overflow-hidden">
+      <div className="flex flex-grow items-center justify-center overflow-hidden h-[80%]">
         <Switch>
           <Route exact path={`${path}/coding`}>
             <ContentBodyCoding
               linkId={getLinkId("Coding")}
+              handleMount={handleMount}
+            />
+          </Route>
+          <Route exact path={`${path}/vizzes`}>
+            <ContentBodyVizzes
+              linkId={getLinkId("Data Vizzes")}
               handleMount={handleMount}
             />
           </Route>
