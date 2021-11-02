@@ -22,12 +22,6 @@ const ContentProjects = () => {
       link: `${path}/vizzes`,
       selected: false,
     },
-    {
-      id: 3,
-      name: "Others",
-      link: `${path}/Others`,
-      selected: false,
-    },
   ]);
 
   const getLinkId = (linkName) => {

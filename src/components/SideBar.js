@@ -9,7 +9,6 @@ import {
   HiOutlineSparkles,
   HiOutlineCode,
   HiOutlineChartBar,
-  HiOutlineLightBulb,
 } from "react-icons/hi";
 import { IoLogoTableau, IoLogoLinkedin } from "react-icons/io5";
 import { FaGithubSquare } from "react-icons/fa";
@@ -78,11 +77,6 @@ const SideBar = () => {
               sectionTitle="Data Vizzes"
               sectionIcon={<HiOutlineChartBar />}
               sectionHref="/projects/vizzes"
-            />
-            <MenuSubSection
-              sectionTitle="Others"
-              sectionIcon={<HiOutlineLightBulb />}
-              sectionHref="#"
             />
           </div>
 
