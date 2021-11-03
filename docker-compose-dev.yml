@@ -9,5 +9,5 @@ services:
     volumes:
       - ./src:/app/src
     environment:
-      # This is for windows working properly
+      # This is Windows to work properly
       - CHOKIDAR_USEPOLLING=true
