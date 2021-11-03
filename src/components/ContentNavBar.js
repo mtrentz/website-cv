@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 const ContentNavBar = ({ navbarLinks }) => {
   return (
-    //  TODO: A cor do botão nao ta funcionando desde que coloquei ROUTE. E tem que fazer o SideBar mudar a cor do botão
     <div className="h-[3%] pl-[7%] 2xl:pl-[12%] flex flex-row gap-5 items-end">
       {navbarLinks.map((links) => (
         <Link to={links.link} className="group">

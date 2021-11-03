@@ -41,7 +41,6 @@ const SideBar = () => {
           </div>
 
           {/* menu */}
-          {/* TODO isso aqui deveria sharear uma lista junto com o ContentNavBar */}
           <div className="flex-grow mr-2">
             {/* Main section has href of first the firt page inside it */}
             <MenuMainSection
