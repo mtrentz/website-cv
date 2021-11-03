@@ -10,14 +10,16 @@ const CardDataViz = ({ vizzesData }) => {
           <div className=" w-[40%] p-5 overflow-auto py-2 flex flex-col object-center justify-center">
             {/* Title */}
             <div className="h-[30%] flex items-center justify-center">
-              <p className="text-md font-semibold text-center">
+              <p className="text-xl 2xl:text-2xl font-semibold text-center">
                 {" "}
                 {vizData.title}{" "}
               </p>
             </div>
             {/* Description */}
             <div className="flex flex-col justify-center mt-1">
-              <p className="text-base text-center">{vizData.description}</p>
+              <p className="text-base 2xl:text-lg text-center">
+                {vizData.description}
+              </p>
             </div>
           </div>
           {/* Image Part */}

@@ -13,6 +13,8 @@ import {
 } from "react-icons/hi";
 import { IoLogoTableau, IoLogoLinkedin } from "react-icons/io5";
 import { FaGithubSquare } from "react-icons/fa";
+import DownloadCVBtn from "./bodies/DownloadCVBtn";
+import cv from "../files/CV_MATEUS_TRENTZ_ENG.pdf";
 
 const SideBar = () => {
   // TODO: Ver como criar shadow pra direita
@@ -78,6 +80,7 @@ const SideBar = () => {
               sectionIcon={<HiOutlineChartBar />}
               sectionHref="/projects/vizzes"
             />
+            <DownloadCVBtn cv={cv} />
           </div>
 
           {/* socials */}

@@ -1,0 +1,5 @@
+node_modules
+edicoes_imagens
+.git
+.dockerignore
+.env
