@@ -15,7 +15,7 @@ const ContentBodyCoding = ({ linkId, handleMount }) => {
   });
 
   return (
-    <div className="w-[80%] h-[90%] flex items-center justify-center shadow-lg">
+    <div className="w-[90%] h-[90%] 2xl:w-[80%] 2xl:h-[80%] flex items-center justify-center shadow-lg">
       <div className="bg-white w-full h-full rounded-lg overflow-auto pt-5">
         {/* Sections */}
         {/* CHESS IMAGE RECOGNIZER */}

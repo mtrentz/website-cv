@@ -5,9 +5,9 @@ const CardDataViz = ({ vizzesData }) => {
     <div className="w-[80%] py-5 overflow-y-auto h-full">
       {vizzesData.map((vizData) => (
         //   Card
-        <div className="bg-white w-[90%] h-[25%] rounded-xl flex flex-row overflow-hidden shadow-lg my-5">
+        <div className="bg-white w-[90%] h-[25%] 2xl:h-[20%] rounded-xl flex flex-row overflow-hidden shadow-lg my-5">
           {/* Text Part */}
-          <div className=" w-[40%] p-5 overflow-auto py-2">
+          <div className=" w-[40%] p-5 overflow-auto py-2 flex flex-col object-center justify-center">
             {/* Title */}
             <div className="h-[30%] flex items-center justify-center">
               <p className="text-md font-semibold text-center">

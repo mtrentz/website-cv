@@ -20,28 +20,28 @@ const ContentBodyTech = ({ linkId, handleMount }) => {
         <CardDefault
           cardImage={python}
           cardTitle="Python"
-          cardDescription="Something about the programming language Python"
+          cardDescription="I've been programming in Python for years, it's the language I'm most confortable at."
         />
         <CardDefault
           cardImage={golang}
           cardTitle="Golang"
-          cardDescription="I've used Go extensively for that and this and something like that "
+          cardDescription="I've been using Go since the start of 2020. It grew to be one of my favorite tools."
         />
         <CardDefault
           cardImage={javascript}
           cardTitle="JavaScript"
-          cardDescription="Used JavaScript for creating React Apps and such"
+          cardDescription="One of my most recent languages to learn, since it used to do web development."
         />
         <CardDouble
           cardImage={tableau}
           cardTitle="Tableau"
-          cardDescription="Made some data vizzes!"
+          cardDescription="I love making dashboards with Tableau!"
           cardImageBig={tableauDash}
         />
         <CardDefault
           cardImage={mysql}
           cardTitle="MySQL"
-          cardDescription="I've been working with SQL for such amount of time"
+          cardDescription="I've been working daily with SQL for two years now."
         />
       </div>
     </div>

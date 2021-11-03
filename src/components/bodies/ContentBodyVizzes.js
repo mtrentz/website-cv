@@ -17,7 +17,7 @@ const ContentBodyVizzes = ({ linkId, handleMount }) => {
       id: 1,
       title: "Plastic Recyclers",
       description:
-        "Location and date of opening of all plastic recyclers in Brazil.",
+        "Location and inauguration date of all plastic recyclers in Brazil.",
       image: recuperadores,
       link: "https://public.tableau.com/views/RecicladoresdePlsticonoBrasil/EstabelecimentosRecuperadores2?:language=en-US&:display_count=n&:origin=viz_share_link",
     },
