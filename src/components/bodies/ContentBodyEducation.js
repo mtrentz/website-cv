@@ -31,7 +31,7 @@ const ContentBodyEducation = ({ linkId, handleMount }) => {
           <h2 className="font-medium text-2xl pl-6 pb-2 text-left">
             Mateus K. Trentz
           </h2>
-          <p className=" flex-0 text-left leading-normal">
+          <p className=" flex-0 text-left leading-normal text-xl">
             I'm a Chemical Engineer who is very passionate about Tech and Data.
             I love programming and I've been doing it for a few years now. I
             currently work as a Data Scientist at MaxiQuim, which is a Brazilian
@@ -57,11 +57,11 @@ const ContentBodyEducation = ({ linkId, handleMount }) => {
 
           {/* Text Part */}
           <div className="w-[50%]">
-            <p className="font-semibold text-center">
+            <p className="font-semibold text-center text-xl">
               Universidade Federal do Rio Grande do Sul
             </p>
-            <p className="flex-0 text-center"> Chemical Engineering </p>
-            <p className="flex-0 text-center"> Graduated in 2020 </p>
+            <p className="flex-0 text-center text-lg"> Chemical Engineering </p>
+            <p className="flex-0 text-center text-lg"> Graduated in 2020 </p>
           </div>
         </div>
 
@@ -79,9 +79,9 @@ const ContentBodyEducation = ({ linkId, handleMount }) => {
 
           {/* Text Part */}
           <div>
-            <p className="font-semibold text-center">MaxiQuim</p>
-            <p className="flex-0 text-center"> Data Scientist </p>
-            <p className="flex-0 text-center"> mar/2020 - present </p>
+            <p className="font-semibold text-center text-xl">MaxiQuim</p>
+            <p className="flex-0 text-center text-lg"> Data Scientist </p>
+            <p className="flex-0 text-center text-lg"> mar/2020 - present </p>
           </div>
         </div>
       </div>

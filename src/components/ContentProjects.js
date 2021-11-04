@@ -39,7 +39,7 @@ const ContentProjects = () => {
   };
 
   return (
-    <div className="bg-terciary flex flex-col h-full w-full">
+    <div className="bg-terciary flex flex-col h-full w-full text-lg">
       {/* Content Title */}
       <ContentTitle title="Projects" />
 

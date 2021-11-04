@@ -3,7 +3,7 @@ import DescriptionText from './DescriptionText'
 
 const CardDouble = ( { cardImage, cardTitle, cardDescription, cardImageBig }) => {
     return (
-        <div className="bg-white w-full md:h-56 xl:h-64 2xl:h-96 col-span-2 flex flex-row rounded-md shadow overflow-hidden">
+        <div className="bg-white w-full md:h-56 xl:h-64 2xl:h-80 col-span-2 flex flex-row rounded-md shadow overflow-hidden">
 
             {/* Logo and Description */}
             <div className="flex flex-col w-[40%]">

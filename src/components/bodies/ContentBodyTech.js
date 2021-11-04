@@ -15,8 +15,9 @@ const ContentBodyTech = ({ linkId, handleMount }) => {
   });
 
   return (
-    <div className="w-[70%] h-[90%] flex items-center justify-center">
-      <div className="grid grid-cols-3 gap-x-1 gap-y-2">
+    <div className=" 2xl:my-10 flex justify-center">
+      {/* <div className="grid grid-cols-3 gap-x-1 gap-y-2 w-[80%] xl:w-[70%] 2xl:w-[60%] h-[80%]"> */}
+      <div className="grid grid-cols-3 gap-x-1 gap-y-2 min-w-[60%] max-w-[80%] w-[70%] min-h-[70%] h-[80%] max-h-[90%]">
         <CardDefault
           cardImage={python}
           cardTitle="Python"
